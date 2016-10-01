@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="buttonCardBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="195.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="iconoPrograma" fitHeight="109.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox prefHeight="150.0" prefWidth="189.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="195.0" prefWidth="189.0">
+                     <children>
+                        <Label fx:id="lblAudio" alignment="BOTTOM_LEFT" onKeyPressed="#audioOnKeyPressed" onMouseClicked="#audioOnMouseClicked" text="Audio" textFill="#212121">
+                           <font>
+                              <Font name="Roboto" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lblPrograma" alignment="BOTTOM_LEFT" text="AppLaunch" textFill="#212121">
+                           <font>
+                              <Font name="Roboto" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="BOTTOM_LEFT" text="Descripción" textFill="#212121">
+                           <font>
+                              <Font name="Roboto" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lblDescripcion" alignment="TOP_LEFT" prefHeight="57.0" prefWidth="189.0" style="-fx-background-color: none;" text="Edite y cree sus propios graficos con GDiit" textAlignment="JUSTIFY" textFill="#757575" wrapText="true">
+                           <padding>
+                              <Insets left="8.0" right="8.0" />
+                           </padding>
+                           <font>
+                              <Font name="Roboto" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="28.0" prefWidth="189.0">
+                           <children>
+                              <JFXButton fx:id="btnEditar" onAction="#btnEditarOnAction" ripplerFill="#f39c12" text="EDITAR">
+                                 <font>
+                                    <Font name="Roboto Medium" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="btnBorrar" onAction="#btnBorrarOnAction" text="BORRAR">
+                                 <font>
+                                    <Font name="Roboto Medium" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

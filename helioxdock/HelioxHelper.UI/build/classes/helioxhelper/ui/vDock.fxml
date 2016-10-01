@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="80.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helioxhelper.ui.DockController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="59.0">
+         <children>
+            <ImageView fx:id="settingsIcon" fitHeight="50.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXComboBox fx:id="combobox" prefHeight="50.0" prefWidth="80.0" promptText="Idioma" />
+           
+         </children>
+      </VBox>
+      <JFXListView fx:id="listViewBotones" prefHeight="500.0" prefWidth="80.0" />
+   </children>
+</VBox>

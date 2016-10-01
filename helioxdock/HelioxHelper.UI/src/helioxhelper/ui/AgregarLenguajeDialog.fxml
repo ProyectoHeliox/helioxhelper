@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="vBox" prefHeight="131.0" prefWidth="564.0" type="VBox" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="59.0" prefWidth="564.0">
+         <children>
+            <JFXTextField fx:id="nombre" focusColor="#ffc107" labelFloat="true" maxWidth="572.0" minWidth="283.0" prefHeight="53.0" prefWidth="572.0" promptText="Escriba el nombre de la lengua" style="-fx-padding: 15;" unFocusColor="#bdbdbd" />
+         </children>
+      </HBox>
+      <HBox prefHeight="68.0" prefWidth="564.0">
+         <children>
+            <JFXTextField fx:id="icono" focusColor="#ffc107" labelFloat="true" maxWidth="564.0" minWidth="422.0" prefHeight="53.0" prefWidth="422.0" promptText="Seleccione un icono" style="-fx-padding: 15;" unFocusColor="#bdbdbd" />
+            <JFXButton fx:id="btnIcono" onAction="#handleSeleccionarIconoAction" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: F39C12;" text="SELECCIONAR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</fx:root>

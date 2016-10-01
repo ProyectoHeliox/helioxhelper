@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helioxhelper.ui.FXMLSettingsController">
+   <children>
+      <JFXToolbar prefHeight="84.0" prefWidth="723.0" style="-fx-background-color: gray;">
+         <center>
+            <Label prefHeight="79.0" prefWidth="677.0" text="Configuración - Asistente Heliox" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Roboto" size="24.0" />
+               </font>
+            </Label>
+         </center>
+      </JFXToolbar>
+      <StackPane fx:id="stackPane" layoutX="-6.0" layoutY="84.0" prefHeight="501.0" prefWidth="723.0">
+         <children>
+            <Pane prefHeight="501.0" prefWidth="705.0">
+               <children>
+                  <VBox layoutX="14.0" layoutY="69.0" prefHeight="380.0" prefWidth="222.0">
+                     <children>
+                        <JFXListView fx:id="listaLenguajes" editable="true" prefHeight="344.0" prefWidth="222.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-ripler-fill: #F39C12;" />
+                        <HBox prefHeight="54.0" prefWidth="257.0">
+                           <children>
+                              <JFXButton fx:id="agregarLenguaje" buttonType="RAISED" onAction="#onActionAgregarLenguaje" ripplerFill="#9e9e9e" style="-fx-background-color: white;" text="Agregar" />
+                              <JFXButton fx:id="editarLenguaje" buttonType="RAISED" onAction="#onActionEditarLenguaje" ripplerFill="#9e9e9e" style="-fx-background-color: white;" text="Editar">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton fx:id="eliminarLenguaje" buttonType="RAISED" onAction="#onActionEliminarLenguaje" onKeyPressed="#onActionEliminarLenguaje" ripplerFill="#9e9e9e" style="-fx-background-color: white;" text="Eliminar" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label layoutX="35.0" layoutY="12.0" text="Lenguajes" textFill="#212121">
+                     <font>
+                        <Font name="Roboto" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="34.0" text="Seleccione uno para editar." textFill="#757575">
+                     <font>
+                        <Font name="Roboto" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXListView fx:id="listaBotones" depthProperty="1" layoutX="253.0" layoutY="68.0" prefHeight="412.0" prefWidth="455.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" verticalGap="4.0" />
+                  <JFXButton fx:id="btnAgregarBoton" buttonType="RAISED" layoutX="615.0" layoutY="32.0" onAction="#agregarBoton" ripplerFill="#ae9773" style="-fx-background-color: WHITE;" text="AGREGAR " textFill="#f39c12">
+                     <font>
+                        <Font name="Roboto Medium" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

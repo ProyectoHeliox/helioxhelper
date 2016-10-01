@@ -1,0 +1,23 @@
+
+
+create table lenguaje (
+   id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+  nombre varchar(50),
+    CONSTRAINT pk_lenguaje PRIMARY KEY (id)
+)
+
+
+create table boton (
+   id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+   rutaicon varchar(250),
+   rutaejecutable varchar(250),
+   rutaaudio varchar(250),
+   descripcion varchar (250),
+    CONSTRAINT pk_boton PRIMARY KEY (id),
+   idLenguaje integer
+)
+
+ALTER TABLE boton
+ADD CONSTRAINT fk_lenguaje
+FOREIGN KEY (idlenguaje)
+REFERENCES lenguaje(id)

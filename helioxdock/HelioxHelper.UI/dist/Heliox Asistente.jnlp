@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Heliox Asistente.jnlp">
+  <information>
+    <title>Heliox Asistente</title>
+    <vendor>Proyecto Heliox</vendor>
+    <description>Herramienta de accesibilidad.	</description>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="HelioxHelper.UI.jar" size="82499196" download="eager" />
+    <jar href="lib\HelioxHelper.Nucleo.jar" size="27655" download="eager" />
+    <jar href="lib\derby.jar" size="3224708" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2167257" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Heliox Asistente" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="helioxhelper.ui.HelioxAsistente"  name="Heliox Asistente" />
+  <update check="always"/>
+</jnlp>

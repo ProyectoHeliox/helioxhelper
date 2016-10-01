@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helioxhelper.ui.AcercaController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="715.0">
+         <children>
+            <JFXToolbar prefHeight="84.0" prefWidth="715.0" style="-fx-background-color: gray;">
+               <center>
+                  <Label prefHeight="79.0" prefWidth="677.0" text="Acerca de - Asistente Heliox" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Roboto" size="24.0" />
+                     </font>
+                  </Label>
+               </center>
+            </JFXToolbar>
+            <JFXTabPane layoutY="84.0" prefHeight="431.0" prefWidth="715.0">
+               <tabs>
+                  <Tab text="Créditos">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="28.0" layoutY="26.0" prefHeight="348.0" prefWidth="659.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="43.0" prefWidth="659.0">
+                                       <children>
+                                          <Label text="Dr. Roberto Feltrero Oreja - Mariana García - ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Hyperlink fx:id="linkProyecto" onAction="#openLinkProyecto" text="http://proyectoheliox.org">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Hyperlink>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="659.0">
+                                       <children>
+                                          <Label text="Promovido por el INALI: Instituto Nacional de Lenguas Indígenas - ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Hyperlink fx:id="linkInali" onAction="#openLinkInali" text="http://inali.gob.mx">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Hyperlink>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="659.0">
+                                       <children>
+                                          <Label text="Financiado mediante el convenio INALI/UNAM.">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="659.0">
+                                       <children>
+                                          <Label text="Este software se distribuye según los terminos de la licencia GNU/GPL 3 o superior.">
+                                             <font>
+                                                <Font name="System Italic" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="153.0" prefWidth="659.0">
+                                       <children>
+                                          <ImageView fitHeight="155.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../icons/inali.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../icons/SSCYDC.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="50.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
